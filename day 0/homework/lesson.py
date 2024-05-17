@@ -10,7 +10,6 @@ left(90)
 forward(200)
 left(90)
 forward(200)
-
 penup()
 goto(200, 200)
 pendown()
