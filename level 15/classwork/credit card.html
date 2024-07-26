@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Method</title>
+</head>
+<body>
+    <form method="POST" >
+        <h2>Choose a Payment Method</h2>
+        <label>
+            <input type="radio" name="payment_method" value="card" required>
+            Pay by Card
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="payment_method" value="cash" required>
+            Pay by Cash
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="payment_method" value="crypto" required>
+            Pay by Crypto
+        </label>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
