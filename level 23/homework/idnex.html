@@ -1,0 +1,65 @@
+<p style="color: blue; font-size: 20px;">ეს არის inline CSS-ის გამოყენებით პუნქტი.</p>
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <title>Internal CSS</title>
+    <style>
+        p {
+            color: green;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <p>ეს არის internal CSS-ის გამოყენებით პუნქტი.</p>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <title>External CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <p>ეს არის external CSS-ის გამოყენებით პუნქტი.</p>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <title>რეგისტრაციის ფორმა</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>რეგისტრაციის ფორმა</h1>
+    </header>
+    
+    <main>
+        <section>
+            <form action="/submit" method="post">
+                <label for="name">სახელი:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">ელექტრონული ფოსტა:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">პაროლი:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">გაგზავნა</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2024 რეგისტრაციის ფორმა.</p>
+    </footer>
+</body>
+</html>

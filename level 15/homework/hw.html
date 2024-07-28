@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <title>ფორმა</title>
+</head>
+<body>
+    <h1>ფორმა</h1>
+    <form action="submit" method="post" enctype="multipart/form-data">
+        <!-- სახელის ველი -->
+        <label for="name">სახელი:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <!-- ელფოსტის ველი -->
+        <label for="email">ელფოსტი:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- პაროლის ველი -->
+        <label for="password">პაროლი:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <!-- ქვეყნის ჩამოსაშლელი მენიუ -->
+        <label for="country">ქვეყანა:</label>
+        <select id="country" name="country" required>
+            <option value="georgia">საქართველო</option>
+            <option value="usa">აშშ</option>
+            <option value="uk">გაერთიანებული სამეფო</option>
+            <option value="france">საფრანგეთი</option>
+            <!-- დაამატეთ სხვა ქვეყნები საჭიროების მიხედვით -->
+        </select>
+        <br><br>
+
+        <!-- სქესის რადიოს ღილაკები -->
+        <label>სქესი:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">მამრი</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">მდედრი</label>
+        <br><br>
+
+        <!-- პირობების მონიშვნის ველი -->
+        <input type="checkbox" id="accept-terms" name="accept-terms" required>
+        <label for="accept-terms">ბაზას პოლიტიკის მიღება</label>
+        <br><br>
+
+        <!-- საყვარელი ჰობის ჩამოსაშლელი მენიუ -->
+        <label for="hobby">საყვარელი ჰობი:</label>
+        <select id="hobby" name="hobby">
+            <option value="reading">წერა</option>
+            <option value="gaming">ვიდეო თამაშები</option>
+            <option value="traveling">მოგზაურობა</option>
+            <option value="cooking">სადილაობა</option>
+            <!-- დაამატეთ სხვა ჰობები საჭიროების მიხედვით -->
+        </select>
+        <br><br>
+
+        <!-- პროფილის სურათის ატვირთვა -->
+        <label for="profile-picture">პროფილის სურათი:</label>
+        <input type="file" id="profile-picture" name="profile-picture">
+        <br><br>
+
+        <!-- დაბადების თარიღის ამომრჩევი ველი -->
+        <label for="birthdate">დაბადების თარიღი:</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+        <br><br>
+
+        <!-- მოსანიშნი მენიუ ძმისა და და/ძმის არჩევისთვის -->
+        <label for="siblings">გყავთ ძმა/და/ორივე:</label>
+        <select id="siblings" name="siblings" required>
+            <option value="brother">ძმა</option>
+            <option value="sister">და</option>
+            <option value="both">ორივე</option>
+        </select>
+        <br><br>
+
+        <!-- Submit ღილაკი -->
+        <button type="submit">შეგვენიშნება</button>
+        <!-- Reset ღილაკი -->
+        <button type="reset">გასუფთავება</button>
+    </form>
+</body>
+</html>
