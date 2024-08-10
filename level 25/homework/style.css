@@ -1,0 +1,14 @@
+#main-header {
+    color: teal;
+    background-color: lightgoldenrodyellow;
+}
+
+.content-paragraph {
+    color: darkviolet;
+    background-color: lavender;
+}
+
+.highlight {
+    color: white;
+    background-color: darkgreen;
+}
